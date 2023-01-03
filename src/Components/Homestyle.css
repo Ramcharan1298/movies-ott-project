@@ -1,15 +1,14 @@
-
-.banner{
+/* .banner {
     padding-top: 10px;
-    position: relative;
-    /* opacity: 0.4; */
-    /* box-shadow: 500px 0px 100px 20px rgb(6, 4, 4) inset; */
-        /* background: radial-gradient(50% 100% at 70% 50.47%, transparent 20%, #010903 100%);	 */
-    background: linear-gradient( to right ,rgb(16, 11, 11) , transparent);
+    z-index: 1;
+    opacity: 0.4;
+    box-shadow: 500px 0px 100px 20px rgb(6, 4, 4) inset;
+    background: radial-gradient(50% 100% at 70% 50.47%, transparent 20%, #010903 100%);	
+    background: linear-gradient(to right, rgb(16, 11, 11), transparent);
 }
 
 
-.banner-overlay{
+.banner-overlay {
     position: absolute;
     padding: 5rem;
     bottom: 50px;
@@ -20,42 +19,45 @@
     justify-content: flex-end;
     align-items: flex-start;
     opacity: 1;
-    /* background-image: linear-gradient(to bottom  , transparent,black); */
-    /* background:linear-gradient(to right, black, transparent); */
-    /* box-shadow: 400px 0px 100px 20px rgb(6, 4, 4) inset; */
+
+    background-image: linear-gradient(to bottom  , transparent,black);
+    background:linear-gradient(to right, black, transparent);
+    box-shadow: 400px 0px 100px 20px rgb(6, 4, 4) inset;
 
     transition: opacity .3s;
 }
-.banner-overlay:hover{
+
+.banner-overlay:hover {
     opacity: 1;
-    
+
 }
- 
-.banner-title{
+
+.banner-title {
     font-weight: 900;
     font-size: 4rem;
     margin-bottom: 0.4rem;
     text-align: left;
-    /* z-index: 1000; */
+    z-index: -1;
 }
-.banner-title h1{
-    color: rgb(182, 253, 2);  
-    font-size: 50px;  
-    font-weight: 800;
+
+.banner-title h1 {
+    
+    opacity: 1;
 }
-.banner-time{
+
+.banner-time {
     font-size: 1rem;
     margin-bottom: 1rem;
 }
 
-.banner-time p{
+.banner-time p {
     color: rgb(7, 193, 249);
     font-weight: 600;
     font-size: 18px;
 
 }
 
-.banner-description{
+.banner-description {
     font-style: italic;
     font-size: 1rem;
     margin-bottom: 0.25rem;
@@ -64,159 +66,496 @@
     width: 50%;
 }
 
-.banner-description h5{
+.banner-description h5 {
     color: rgb(252, 251, 254);
     font-weight: 700;
 }
 
-button{
-    display:flex;
+button {
+    display: flex;
     background-color: white;
     color: rgb(9, 11, 11);
     font-weight: 500;
-}
+} */
 
 
 
 
-#carousel-items{
-    display: flex;
-    width: 200px;
-    height: 270px;
-}
-#carousel-items img{
-    width: 200px;
-    height: 270px;
-}
 
 
-/* .carousel{
+
+
+
+
+
+.container-fluid .row .col-5{
     position: relative;
-    height: 700px;
-    margin: auto;
-    width: 90%;
-    display: grid;
-    place-items: center;
-}
-.carousel-list{
+
+    /* left:90px; */
     display: flex;
-}
-.carousel-slider{
-    display: flex;
-    width:calc(250px * 18);
-    animation: scroll 40s linear infinite;
-}
-
-.carousel-slider:hover{
-    animation-play-state:paused;
-}
-
-@-webkit-keyframes  scroll{
-    0%{
-        transform: translateX(0);
-    }
-    100%{
-        transform: translateX(calc(-250px * 9));
-    }
-}
-
-@keyframes scroll{
-    0%{
-        transform: translateX(0);
-    }
-    100%{
-        transform: translateX(calc(-250px * 9));
-    }
-}
-
-#carousel-item{
-    position: relative;
-    width: 220px;
-    height: 270px;
-    border-radius: 10px;
-    display: flex;
+    float: left;
+    flex-direction: column;
     align-items: center;
-    padding: 15px;
-    cursor: pointer;
+    justify-content: center;
+    box-shadow: 0px  0 700px black;
 }
 
-#carousel-item img{
-    width: 220px;
-    height: 270px;
+.container-fluid .row .col-7{
+    display: flex;
+    float: right;
+}
+
+.container-fluid .row{
+    background-color: #0b090a;
+}
+
+.name{
+
+    background: linear-gradient(to right, #9df510, #81f307, #cf23cf, #cc6b33);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 600;
+}
+
+.extra{
+    display: none;
+}
+.duration{
+    font-weight: 600;
+    font-size: 18px;    
+    margin-bottom: 1rem;
+}
+.duration p{
+    color: gray;
+}
+
+.description h5{
+    font-family: monospace;
+    display: inline-block;
+    justify-content: flex-start;
+    background: linear-gradient(to right, #f4f8ed, #fafcf8, #f5f8fb, #159ff5);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.container-fluid .row ul {
+    display: flex;
+
+}
+.container-fluid .row ul li{
+    list-style: none;
+    color: rgb(254, 254, 254);
+    margin: 20px;
+    /* padding-right: 40px; */
+}
+.container-fluid .row ul li a{
+    background-color: rgb(255, 253, 253);
+    color: black;
+    padding: 10px;
     border-radius: 10px;
+    font-weight: 600;
+    box-shadow: 0 0 50px rgb(56, 252, 7);
+    /* padding-right: 40px; */
 }
+.container-fluid .row ul li a:hover{
+    opacity: 0.8;
+    background-color: rgb(252, 253, 249);
 
-
-#carousel-item:hover{
-    transform: translateY(-30px);
-    transform: scale(1.1);
+}
+.container-fluid .row ul li a:hover{
+    transform: scale(1.5);
     transition: 0.3s;
- }   */
-
-
-
-
-
-
-
-/* -----------------Carousel Sliding----------------- */
-
- /* .carousel{
-   width: 100%;
-   position: absolute;
-   bottom: 0;
-   overflow: hidden;
-   border-radius: 20px;
-   padding: 0px 2%;
 }
 
-.carousel h3{
-    color: white;
-    font-size: 1.5rem;
-    padding-top: 20px;
+
+
+@media screen and (max-width:960px) {
+    .container-fluid{
+        width: 100%;
+    }
+    .container-fluid .row .col-5{
+        display: flex; 
+        width: 100%;
+        height: 100vh;
+        background-position: left;
+        background-size: 100% 100vh;
+        display: none;
+    }
+    
+    .extra{
+        display:block;
+        position: absolute;
+        top: 300px;
+    }
+
+    .extra h1{
+        font-size: 50px;
+        background: linear-gradient(to right, #8704fa, #01f705, #f8ec03, #bbd20c);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        font-weight: 700;
+    }
+    .extrabutton{
+        background-color: white;
+        color: #0b090a;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 50px rgb(252, 252, 7);
+
+    }
+    .container-fluid .row .col-5 .name h1{
+        background: linear-gradient(to right, #f6f8f9, #f7f9f4, #f7f5f7, #eefb02);
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+        font-weight: 700;
+    }
+    .container-fluid .row .col-7{
+        width: 100%;
+    }
+    .duration{
+        display: none;
+    }
+    .description h5 {
+        display: none;
+    }
 }
 
-.carousel-slider{
-    position: relative;
+@media screen and ( max-width:500px){
+    .container-fluid .row .col-7{
+        width: 100%;
+        height: 90vh;
+    }
+
+     .image{
+        width: 300px;
+        height: 200px;
+    }
+}
+
+
+
+
+
+
+
+/* -----------------New Releases----------------- */
+
+#carousel-item img {
     display: flex;
-    align-items: center;
-    width: 60%; 
-    height: 500px;
-    padding: 0;
-
-}
-
-.carousel-list{
-     position: absolute; 
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    padding: 0 10px;
-}
-
-#carousel-item{
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   width: 200px;
-   height: 180px;
-   border-radius: 10px;
-   box-sizing: border-box;
-   margin: 0 7px;
-   object-fit: fill;
-   cursor: pointer;
-   transform: translate(0 , -60px);
-}
-
-
-#carousel-item img{
-    width: 220px;
+    width: 200px;
     height: 270px;
-    border-radius: 10px;
+    border-radius: 20px;
+    margin: 10px;
+    /* box-shadow:0px 460px  100px 100px rgb(247, 7, 183) ;  */
+
 }
 
-#carousel-item:hover{
-    transform: translateY(-30px);
+.carousel h4 {
+    margin-left: 20px;
+    background: linear-gradient(to right, #fc020f, #fbf9f9, #f3f3f7, #fefefd);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 700;
+    
+}
+
+#carousel-item:hover {
     transform: scale(1.2);
-    transition: 0.3s;
-}  */
+    transition: 0.8s;
+}
+
+#carousel-item h6 {
+    font-weight: 800;
+    color: white;
+    padding-left: 18px;
+    background: linear-gradient(to right, #8ef161, #8ef161, #2ceb7f, #fefefd);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    /* background: linear-gradient(10deg , rgba(212 , 251 ,0 ,0.5) 0%, rgba(255 , 0 ,245 , 0.5) 100%); */
+}
+
+
+
+/* -----------------Top Picks For You----------------- */
+
+
+
+#top-item img {
+    display: flex;
+    width: 230px;
+    height: 250px;
+    border-radius: 100px;
+    margin: 10px;
+    /* box-shadow:0px 460px  100px 100px rgb(247, 7, 183) ;  */
+
+}
+
+.top h4 {
+    margin-left: 20px;
+    background: linear-gradient(to right, #fb1b27, #fbf9f9, #f3f3f7, #fefefd);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 700;
+}
+
+#top-item:hover {
+    transform: scale(1.2);
+    transition: 0.8s;
+}
+
+#top-item h6 {
+    font-weight: 800;
+    color: white;
+    padding-left: 18px;
+    background: linear-gradient(to right, #8ef161, #8ef161, #2ceb7f, #fefefd);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    /* background: linear-gradient(10deg , rgba(212 , 251 ,0 ,0.5) 0%, rgba(255 , 0 ,245 , 0.5) 100%); */
+}
+
+
+
+
+
+/* -----------------TV Shows For You----------------- */
+
+
+
+
+
+.tvshows img {
+    display: flex;
+    width: 280px;
+    height: 370px;
+    border-radius: 20px;
+    margin: 10px;
+    /* padding-left: 50px; */
+}
+
+.tvshows h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 40px;
+    background: linear-gradient(to right, #fb0261, #da05f7, #f1213c, #fb5f05);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.tvshows {
+    background: linear-gradient(to top, #8ef161, #fefefd, #fefefd);
+    border-radius: 50px;
+    box-shadow: 0px 0px 200px rgb(47, 247, 7);
+}
+
+.carousel-tv h6 {
+    font-weight: 800;
+    color: white;
+    padding-left: 18px;
+    background: linear-gradient(to right, #fa0445, #404110, #5d79f7, #fefefd);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.carousel-tv:hover {
+    transform: scale(1.2);
+    transition: 0.8s;
+}
+
+
+
+
+/* -----------------Upcoming TV Shows----------------- */
+
+
+
+.upcoming-tv img {
+    display: flex;
+    width: 280px;
+    height: 370px;
+    border-radius: 20px;
+    margin: 10px;
+    /* padding-left: 50px; */
+}
+
+.upcoming-tvshows h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 40px;
+    background: linear-gradient(to right, #0303f6, #6203fb, #0daef9, #fcfcfb);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.upcoming-tvshows {
+    background: linear-gradient(to bottom, #ef067e, #f4f4d3, #ebebe2);
+    box-shadow: 0px 0px 90px rgb(247, 7, 183);
+    border-radius: 50px;
+}
+
+.upcoming-tv h6 {
+    font-weight: 800;
+    color: white;
+    padding-left: 18px;
+    background: linear-gradient(to right, #0b090a, #191910, #5d79f7, #fefefd);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.upcoming-tv:hover {
+    transform: scale(1.2);
+    transition: 0.8s;
+}
+
+
+/* -----------------Trending Characters in The Universe----------------- */
+
+
+
+#characters-tv img {
+    display: flex;
+    width: 140px;
+    height: 180px;
+    border-radius: 100px;
+    margin: 10px;
+    box-shadow:0px  0px 90px rgb(238, 231, 236) ; 
+}
+
+.characters h4 {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-weight: 700;
+    background: linear-gradient(to right, #f2f2f4, #f6ea03, #f1ee04, #fcfcfb);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.characters {
+    border-radius: 100px;
+}
+
+#characters-tv h6 {
+    font-weight: 800;
+    color: white;
+    padding-left: 18px;
+    background: linear-gradient(to right, #02b1fc, #f4f405, #f3f3f7, #fefefd);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#characters-tv:hover {
+    transform: scale(1.2);
+    transition: 0.8s;
+}
+
+
+
+/* -----------------MARVEL Game Collection----------------- */
+
+
+
+
+#games-tv img {
+    display: flex;
+    width: 200px;
+    height: 220px;
+    border-radius: 100px;
+    margin: 10px;
+    box-shadow:0px  0px 90px rgb(238, 231, 236) ; 
+}
+
+.games h4 {
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    font-weight: 700;
+    background: linear-gradient(to right, #f2f2f4, #f6ea03, #f1ee04, #fcfcfb);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.games {
+    border-radius: 100px;
+}
+
+#games-tv h6 {
+    font-weight: 800;
+    color: white;
+    padding-left: 18px;
+    background: linear-gradient(to right, #fc020f, #fc020f, #f3f3f7, #fefefd);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#games-tv:hover {
+    transform: scale(1.2);
+    transition: 0.8s;
+}
+
+
+
+
+/*-------------------- Final Part------------------- */
+
+.container-fluid .row .col-5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* width: 100%; */
+}
+
+.col-5 h5{
+    color: red;
+}
+
+.col-5 a{
+    text-decoration: none;
+    background-color: red;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+@media screen and (max-width:960px) {
+    .container-fluid .row .col-5{
+        /* display: grid; */
+        /* position: absolute;
+        top: 2000px; */
+        display: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .col-7 img{
+        width: 700px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .col-7 img{
+        width: 450px;
+        height: 250px;
+    }
+    .container-fluid .row .col-7 {
+        height: 40vh;
+    }
+}
+
+
+.container-fluid .col-5 img{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+}
+.container-fluid  .col-7 h5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    font-size: 50px;
+    padding-left: 40px;
+}

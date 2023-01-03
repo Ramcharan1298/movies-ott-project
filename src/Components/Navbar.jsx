@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { FaBars, FaGlobe, FaSearch, FaTimes } from 'react-icons/fa';
 import { IoMdContact } from 'react-icons/io'
 import { useState } from 'react';
+import './Navbarstyle.css';
 
 const Navbar = () => {
     //    let menu = document.querySelector(".togglebutton");
@@ -22,7 +23,7 @@ const Navbar = () => {
             <ul className={click ? "nav open" : "nav"} >
                 <li><Link to={'/'}>Home</Link></li>
                 <li><Link to={'/Movies'}>Movies</Link></li>
-                <li><Link to={'/Series'}>Series</Link></li>
+                <li><Link to={'/Series'}>TV Shows</Link></li>
                 <li><Link to={'/Comics'}>Comics</Link></li>
                 <li><Link to={'/Trending'}>Trending</Link></li>
             </ul>
