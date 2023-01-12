@@ -1,0 +1,76 @@
+.game img{
+    width: 400px;
+    height: 470px;
+    border-radius: 10px
+}
+.mainvideo{
+    /* opacity: 0.3; */
+    background:linear-gradient(t0);
+}
+.total{
+    background-color: white;
+}
+.Game-carousel{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
+    /* grid-template-columns: 420px 420px 420px 420px ; */
+    margin: 6px;
+}
+
+.game:hover{
+    transform: translateY(-17px)
+    
+}
+.Main h2{
+    display: flex;
+    color: rgb(5, 15, 12);
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.game h6{
+    font-size: 20px;
+    font-weight: 700;
+    background: linear-gradient(to right, #08080b, #ed0748, #f1ee04, #f3f303);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.Main h2{
+    font-size: 40px;
+    font-weight: 700;
+    background: linear-gradient(to right, #0707eb, #03b1f6, #ff03b8, #fcfcfb);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+
+
+@media screen and (max-width:1573px){
+    .game img{
+        width: 420px;
+        height: 490px;
+    }
+}
+
+@media screen and (max-width:1183px){
+    .game img{
+        width: 520px;
+        height: 590px;
+    }
+}
+
+@media screen and (max-width:893px){
+    .game img{
+        width: 380px;
+        height: 450px;
+    }
+}
+
+@media screen and (max-width:793px){
+    .game img{
+        width: 420px;
+        height: 420px;
+    }
+}

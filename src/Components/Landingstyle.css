@@ -1,0 +1,59 @@
+.Title{
+    position: absolute;
+    bottom: 380px;
+    left: 600px;
+    background-color: red;
+    padding: 20px;
+    border-radius: 4px;
+    /* box-shadow: 200px , 100px , 60px ,rgb(5, 251, 5); */
+}
+.Title h4{
+    font-size: 40px;
+    font-weight: 700;
+}
+.mainvideo2{
+    width: 100%;
+    height: 100vh;
+    opacity: 0.6;
+}
+
+
+@media screen and (max-width:1270px){
+    .Logo img{
+        width: 100%;
+    }
+    .Title  {
+        position: absolute;
+        bottom: 40%;
+        left: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+     .Title h4{
+        font-size: 30px;
+        font-weight: 700;
+    }
+}
+
+
+
+@media screen and (max-width:700px){
+    .Logo img{
+        width: 70%;
+    }
+    .Title  {
+        position: absolute;
+        bottom: 43%;
+        left: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+     .Title h4{
+        font-size: 20px;
+        font-weight: 700;
+    }
+}

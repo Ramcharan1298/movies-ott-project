@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.bannercarousel .banner1{
+    width: 100%;
+    height: 100vh;
+}
+
+
+.banner2{
+  display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+/* -----------------New Releases----------------- */
+
+#carousel-item img {
+  display: flex;
+  width: 200px;
+  height: 270px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.carousel h4 {
+  margin-left: 20px;
+  background: linear-gradient(to right, #fc020f, #fbf9f9, #f3f3f7, #fefefd);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 700;
+}
+
+
+#carousel-item:hover {
+  transform: scale(1.2);
+  transition: 0.8s;
+}
+
+#carousel-item h6 {
+  font-weight: 800;
+  color: white;
+  padding-left: 18px;
+  background: linear-gradient(to right, #8ef161, #8ef161, #2ceb7f, #fefefd);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  /* background: linear-gradient(10deg , rgba(212 , 251 ,0 ,0.5) 0%, rgba(255 , 0 ,245 , 0.5) 100%); */
+  /* background: linear-gradient(to right, #8ef161, #8ef161, #2ceb7f, #fefefd); */
+
+}
+
+
+
+
+
+
+
+/* #app { height: 100% }
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.mySwiper {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+.swiper-slide img {
+  display: flex;
+  width:100%;
+  height:270px ;
+} */
+

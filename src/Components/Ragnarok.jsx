@@ -7,7 +7,7 @@ const Ragnarok = () => {
     return (
         <div>
             {/* <h1>This is Trailers Page</h1> */}
-            <Video autoPlay loop
+            <Video autoPlay loop muted
             width="100%"
             height="90%"
              >

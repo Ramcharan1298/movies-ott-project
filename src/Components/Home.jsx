@@ -7,8 +7,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { Link } from 'react-router-dom';
-import {FaPlay} from 'react-icons/fa'
-import {BsThreeDotsVertical} from 'react-icons/bs'
+import {FaPlay} from 'react-icons/fa';
+import {BsThreeDotsVertical} from 'react-icons/bs';
 
 const Home = () => {
 
@@ -1128,8 +1128,8 @@ const Home = () => {
 
                 <div className='container-fluid'>
                      <div className="row">
-                         <div className='col-5'><img src={require('./Images/Finalpart/marvel-logo.png')}/></div>
-                         <div className='col-7'>
+                         <div className='col-5'><img style={{width:"600px", height:"50px"}} src={require('./Images/Finalpart/marvel-logo.png')}/></div>
+                         <div className='col-7 marvel'>
                             <h5>Marvel Cinematic Universe</h5>
                          </div>
                      </div>

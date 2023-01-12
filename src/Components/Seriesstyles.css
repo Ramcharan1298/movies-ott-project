@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+}
+
+.banner--2 img{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.5;
+}
+.Logo  {
+   position: absolute;
+   bottom: 35%;
+   left: 40%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.Logo img{
+    width: 150%;
+}
+
+@media screen and (max-width:1090px){
+    .Logo img{
+        width: 100%;
+    }
+    .Logo  {
+        position: absolute;
+        bottom: 40%;
+        left: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+}
+
+
+@media screen and (max-width:700px){
+    .Logo img{
+        width: 70%;
+    }
+    .Logo  {
+        position: absolute;
+        bottom: 43%;
+        left: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+}
+
+
+
+
+.tv-shows img {
+    display: flex;
+    width: 200px;
+    height: 270px;
+    border-radius: 20px;
+    margin: 10px;
+    /* padding-left: 50px; */
+}
+
+.tv-shows h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 40px;
+    background: linear-gradient(to right, #fb0261, #da05f7, #f1213c, #fb5f05);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.tv-shows {
+
+    background: linear-gradient(to top, #f8fbf6, #fefefd, #fefefd);
+    border-radius: 0px;
+    box-shadow: 0px 0px 400px rgb(251, 253, 251);
+}
+
+.carouseltv h6 {
+    font-weight: 800;
+    color: white;
+    padding-left: 18px;
+    background: linear-gradient(to right, #070606, #0a0a01, #030407, #20fc03);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.carouseltv:hover {
+    transform: scale(1.2);
+    transition: 0.8s;
+}
+
+.smallbanner img{
+    width: 100%;
+}
+
+
+
+/* -----------------Upcoming TV Shows----------------- */
+
+
+
+.upcomingtv img {
+    display: flex;
+    width: 200px;
+    height: 270px;
+    border-radius: 20px;
+    margin: 10px;
+    /* padding-left: 50px; */
+}
+
+.upcomingtvshows h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 40px;
+    background: linear-gradient(to right, #0303f6, #6203fb, #0daef9, #fcfcfb);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.upcomingtvshows {
+    background: linear-gradient(to bottom, #faf3f7, #f7f7f2, #fafaf7);
+    box-shadow: 0px 0px 90px rgb(255, 251, 254);
+    border-radius: 0px;
+}
+
+.upcomingtv h6 {
+    font-weight: 800;
+    color: white;
+    padding-left: 18px;
+    background: linear-gradient(to right, #0b090a, #191910, #5d79f7, #fefefd);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.upcomingtv:hover {
+    transform: scale(1.2);
+    transition: 0.8s;
+}
+
+/* -----------------NON - fiction TV Shows----------------- */
+
+
+
+#carouselitem img {
+    display: flex;
+    width: 300px;
+    height: 360px;
+    border-radius: 20px;
+    margin: 40px;
+    /* padding-left: 50px; */
+}
+
+.carousel-non h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 40px;
+    background: linear-gradient(to right, #f6b103, #03fb0b, #0daef9, #fcfcfb);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.carousel-non {
+    background: linear-gradient(to bottom, #faf3f7, #f7f7f2, #fafaf7);
+    box-shadow: 0px 0px 90px rgb(255, 251, 254);
+    border-radius: 0px;
+}
+
+#carouselitem h6 {
+    font-weight: 800;
+    color: white;
+    padding-left: 45px;
+    background: linear-gradient(to right, #0b090a, #191910, #5d79f7, #fefefd);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#carouselitem:hover {
+    transform: scale(1.2);
+    transition: 0.8s;
+}
+
+
+
+
+
+
+/* -----------------Marvel hulu TV Shows----------------- */
+
+
+
+#Animations-tv img {
+    display: flex;
+    width: 200px;
+    height: 260px;
+    border-radius: 100px;
+    margin: 40px;
+    /* padding-left: 50px; */
+}
+
+.Animations h4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 40px;
+    background: linear-gradient(to right, #f6b103, #03fb0b, #0daef9, #fcfcfb);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.Animations {
+    background: linear-gradient(to bottom, #faf3f7, #f7f7f2, #fafaf7);
+    box-shadow: 0px 0px 90px rgb(255, 251, 254);
+    border-radius: 0px;
+}
+
+#Animations-tv h6 {
+    font-weight: 800;
+    color: white;
+    padding-left: 45px;
+    background: linear-gradient(to right, #0b090a, #191910, #5d79f7, #fefefd);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+#Animations-tv:hover {
+    transform: scale(1.2);
+    transition: 0.8s;
+}

@@ -111,3 +111,67 @@
         display: none;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------New Releases----------------- */
+
+#carousel-item img {
+    display: flex;
+    width: 200px;
+    height: 270px;
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow:0px  0px 20px rgb(238, 231, 236) ;
+}
+
+.carousel h4 {
+    margin-left: 20px;
+    background: linear-gradient(to right, #fc020f, #fbf9f9, #f3f3f7, #fefefd);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 700;
+    
+}
+
+#carousel-items:hover {
+    transform: scale(1.2);
+    transition: 0.8s;
+}
+
+#carousel-item h6 {
+    font-weight: 800;
+    color: white;
+    padding-left: 18px;
+    background: linear-gradient(to right, #61bff1, #8ef161, #2ceb7f, #fefefd);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    /* background: linear-gradient(10deg , rgba(212 , 251 ,0 ,0.5) 0%, rgba(255 , 0 ,245 , 0.5) 100%); */
+}
+#carousel-items h6 {
+    font-weight: 800;
+    color: white;
+    padding-left: 18px;
+    background: linear-gradient(to right, #61bff1, #8ef161, #2ceb7f, #fefefd);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    /* background: linear-gradient(10deg , rgba(212 , 251 ,0 ,0.5) 0%, rgba(255 , 0 ,245 , 0.5) 100%); */
+}
+#carousel-items img {
+    display: flex;
+    width: 200px;
+    height: 270px;
+    border-radius: 20px;
+   margin:10px;
+}
